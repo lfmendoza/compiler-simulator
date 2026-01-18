@@ -34,9 +34,9 @@ graph TD
   A[Assign]
   A --> B[Type: int]
   A --> C[Identifier: position]
-  A --> D[Expr(+)]
+  A --> D[Expr_plus]
   D --> E[Identifier: initial]
-  D --> F[Expr(*)]
+  D --> F[Expr_mul]
   F --> G[Identifier: velocity]
   F --> H[Literal: 60]
 ```
