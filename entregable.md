@@ -31,18 +31,16 @@ Tabla de tokens y tabla de simbolos.
 
 ```mermaid
 graph TD
-  A[Assign]
+  A[Declaration]
   A --> B[Type: int]
-  A --> C[Identifier: position]
-  A --> D[Expr_plus]
-  D --> E[Identifier: initial]
-  D --> F[Expr_mul]
-  F --> G[Identifier: velocity]
-  F --> H[Literal: 60]
+  A --> C[Assign]
+  C --> D[Identifier: position]
+  C --> E["Expr(+)"]
+  E --> F[Identifier: initial]
+  E --> G["Expr(*)"]
+  G --> H[Identifier: velocity]
+  G --> I[Literal: 60]
 ```
-![AST Mermaid](file:///C:/Users/lfmendoza/OneDrive%20-%20UVG/Im%C3%A1genes/Capturas%20de%20pantalla/Screenshot%202026-01-17%20181621.png)
-
-
 
 ## Fase 3: Analisis Semantico
 ### Comprobaciones realizadas:
